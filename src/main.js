@@ -2,15 +2,14 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import axios from "axios";
-import { createStore } from "vuex";
+import store from "./Store";
 
 // Extra Libraries
-import { useVuelidate } from "@vuelidate/core";
-import { required, email } from "@vuelidate/validators";
 import vSelect from "vue-select";
+
 import { useToast } from "vue-toastification";
-const toast = useToast();
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
 
 // // Import all of Bootstrap's CSS
 // import "~bootstrap/scss/bootstrap";
@@ -21,27 +20,17 @@ const toast = useToast();
 // // Import all of Bootstrap's JS
 // import * as bootstrap from "bootstrap";
 
-import "./assets/main.css";
-
-import { createPopper } from "@popperjs/core";
-
 const deniz = createApp(App);
+deniz.config.globalProperties.toast = useToast();
+
 deniz.use(router);
-deniz.use(axios);
 deniz.use(store);
-deniz.use(useVuelidate);
-deniz.use(required, email);
-deniz.use(bootstrap);
-deniz.use(useToast, {
+deniz.use(Toast, {
   // Setting the global default position
   transition: "Vue-Toastification__bounce",
   maxToasts: 3,
   newestOnTop: true,
 });
-Vue.component("v-select", vSelect);
-
-const store = createStore({
-  // add root component
-});
+deniz.component("v-select", vSelect);
 
 deniz.mount("#app");

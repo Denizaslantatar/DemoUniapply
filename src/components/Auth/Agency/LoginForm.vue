@@ -58,7 +58,8 @@ export default {
           readonly
           :class="{
             'form-control': true,
-            'is-invalid': v$.payload.Email && v$.payload.Email.$errors.length}"
+            'is-invalid': v$.payload.Email && v$.payload.Email.$errors.length,
+          }"
           id="staticEmail"
           placeholder="Email"
           v-model="payload.Email"

@@ -18,4 +18,4 @@ class ALoginService {
       });
   }
 }
-export default ALoginService();
+export default new ALoginService();

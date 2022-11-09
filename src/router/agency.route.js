@@ -1,6 +1,9 @@
-const LoginForm = () => import("@/components/Auth/Agency/LoginForm.vue");
-const DashboardHome = () =>
-  import("@/components/Dashboard/Agency/DashboardHome.vue");
+const LoginForm = () => {
+  return import("@/components/Auth/Agency/LoginForm.vue");
+};
+const DashboardHome = () => {
+  return import("@/components/Dashboard/Agency/DashboardHome.vue");
+};
 
 export default [
   {

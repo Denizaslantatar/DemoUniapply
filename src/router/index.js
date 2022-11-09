@@ -50,7 +50,7 @@ let checkStudentToken = () => {
 };
 
 // If result is false, shows unauthorized path
-router.beforeEach((to, from, next) => {
+/* router.beforeEach((to, from, next) => {
   if (to.matched.some((uri) => uri.meta.agency)) {
     if (checkAgencyToken()) {
       next();
@@ -70,6 +70,6 @@ router.beforeEach((to, from, next) => {
   } else {
     next();
   }
-});
+}); */
 
 export default router;
