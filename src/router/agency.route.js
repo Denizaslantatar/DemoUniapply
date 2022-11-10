@@ -1,14 +1,14 @@
 const LoginForm = () => {
-  return import("@/components/Auth/Agency/LoginForm.vue");
+  return import("@/components/Agency/Auth/LoginForm.vue");
 };
 const DashboardHome = () => {
-  return import("@/components/Dashboard/Agency/DashboardHome.vue");
+  return import("@/components/Agency/Dashboard/DashboardHome.vue");
 };
 const ForgotPassword = () => {
-  return import("@/components/Auth/Agency/ForgotPassword.vue");
+  return import("@/components/Agency/Auth/ForgotPassword.vue");
 };
 const RegisterForm = () => {
-  return import("@/components/Auth/Agency/RegisterForm.vue");
+  return import("@/components/Agency/Auth/RegisterForm.vue");
 };
 
 export default [

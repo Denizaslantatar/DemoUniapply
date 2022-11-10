@@ -1,10 +1,10 @@
-const LoginForm = () => import("@/components/Auth/Student/LoginForm.vue");
+const LoginForm = () => import("@/components/Student/Auth/LoginForm.vue");
 const DashboardHome = () => {
-  return import("@/components/Dashboard/Student/DashboardHome.vue");
+  return import("@/components/Student/Dashboard/DashboardHome.vue");
 };
 const ForgotPassword = () =>
-  import("@/components/Auth/Student/ForgotPassword.vue");
-const SignUp = () => import("@/components/Auth/Student/RegisterForm.vue");
+  import("@/components/Student/Auth/ForgotPassword.vue");
+const SignUp = () => import("@/components/Student/Auth/RegisterForm.vue");
 
 export default [
   {
