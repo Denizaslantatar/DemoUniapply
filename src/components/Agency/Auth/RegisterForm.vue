@@ -1,5 +1,5 @@
 <template>
   <main>
-    <h1>RegisterForm</h1>
+    <h1>Agency RegisterForm</h1>
   </main>
 </template>

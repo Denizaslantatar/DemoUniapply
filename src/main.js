@@ -10,6 +10,7 @@ import vSelect from "vue-select";
 import { useToast } from "vue-toastification";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
+import Spinner from "@/components/Layouts/Loading/Spinner.vue";
 
 // // Import all of Bootstrap's CSS
 // import "~bootstrap/scss/bootstrap";
@@ -32,5 +33,6 @@ deniz.use(Toast, {
   newestOnTop: true,
 });
 deniz.component("v-select", vSelect);
+deniz.component("Spinner", Spinner);
 
 deniz.mount("#app");
