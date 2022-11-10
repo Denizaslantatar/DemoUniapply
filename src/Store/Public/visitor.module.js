@@ -29,8 +29,8 @@ export const Visitor = {
           (decoded.StudentId || decoded.StudentPreId)
         ) {
           user = "student";
-        } else if (decoded.Type == "agency") {
-          user = "agency";
+        } else if (decoded.Type == "partner") {
+          user = "partner";
         }
       }
       commit("SetUserType", user);
