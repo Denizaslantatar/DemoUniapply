@@ -7,7 +7,7 @@ class ALoginService {
     return await axios
       .post(AGENT + "PostLoginAgency", payload, {
         headers: {
-          Authorization: "Bearer " + localStorage.getItem("vToken"),
+          Authorization: "Bearer " + localStorage.getItem("token"),
         },
       })
       .catch((err) => {

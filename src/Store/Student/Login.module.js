@@ -13,7 +13,6 @@ export const SLoginMod = {
         if (response?.data?.token && response?.data?.success) {
           toast.success("You have logged in successfully");
           localStorage.setItem("token", response.data.token);
-          localStorage.removeItem("token");
           router.push("/student/dashboard");
         } else {
           toast.error("Incorrect email or password!");

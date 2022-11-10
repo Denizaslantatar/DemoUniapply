@@ -14,8 +14,7 @@ export const ALoginMod = {
       await ALoginService.Login(payload).then((response) => {
         if (response.data.detail.token) {
           let token = response.data.detail.token;
-          localStorage.setItem("aToken", token);
-          localStorage.removeItem("vToken");
+          localStorage.setItem("token", token);
           let decoded = jwt_decode(token);
           if (decoded.IsAgreed == "1") {
             toast.success("You have logged in successfully!");
