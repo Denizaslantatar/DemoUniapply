@@ -7,7 +7,7 @@ const DashboardHome = () => {
 const ForgotPassword = () => {
   return import("@/components/Agency/Auth/ForgotPassword.vue");
 };
-const RegisterForm = () => {
+const RegisterContent = () => {
   return import("@/components/Agency/Auth/RegisterForm.vue");
 };
 
@@ -22,10 +22,10 @@ export default [
   },
   {
     path: "/recruiter/signup",
-    component: RegisterForm,
+    component: RegisterContent,
   },
   {
-    path: "/agency/dashboard",
+    path: "/partner/dashboard",
     component: DashboardHome,
     meta: {
       agency: true,
