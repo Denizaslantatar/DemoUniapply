@@ -149,7 +149,7 @@ export default {
         this.$router.push("/partner/dashboard");
       }
     } else {
-      this.$store.dispatch("AregisterMod/GetCurrencyCountry").then(() => {
+      this.$store.dispatch("ARegisterMod/GetCurrencyCountry").then(() => {
         this.isDataLoaded = true;
       });
     }
