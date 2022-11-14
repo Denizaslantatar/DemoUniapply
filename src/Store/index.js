@@ -10,7 +10,7 @@ const store = createStore({
     ALoginMod,
     SLoginMod,
     Visitor,
-    ARegister,
+    ARegisterMod,
   },
 });
 export default store;
