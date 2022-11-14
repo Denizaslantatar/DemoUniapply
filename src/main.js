@@ -6,6 +6,7 @@ import store from "./Store";
 
 // Extra Libraries
 import vSelect from "vue-select";
+import "vue-select/dist/vue-select.css";
 
 import { useToast } from "vue-toastification";
 import Toast from "vue-toastification";

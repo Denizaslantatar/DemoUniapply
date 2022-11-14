@@ -225,11 +225,7 @@ export default {
               v-model="payload.CountryId"
             >
               <template #selected-option="option">
-                <img
-                  style="max-width: 15px"
-                  v-if="option.Name"
-                  :src="'/assets/flags/' + option.CountryFlag + '.svg'"
-                />
+                <img style="max-width: 15px" v-if="option.Name" />
                 {{
                   option.CountryCode
                     ? option.CountryCode + " - " + option.Name
@@ -237,10 +233,7 @@ export default {
                 }}
               </template>
               <template v-slot:option="option">
-                <img
-                  style="max-width: 15px"
-                  :src="'/assets/flags/' + option.CountryFlag + '.svg'"
-                />
+                <img style="max-width: 15px" />
                 {{ option.CountryCode + " - " + option.Name }}
               </template>
             </v-select>
