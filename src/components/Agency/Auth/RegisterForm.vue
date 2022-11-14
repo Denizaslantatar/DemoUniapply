@@ -126,10 +126,10 @@ export default {
   },
   computed: {
     isCountry() {
-      return this.$store.state.AregisterMod.isCountry;
+      return this.$store.state.ARegisterMod.isCountry;
     },
     isCurrency() {
-      return this.$store.state.AregisterMod.isCurrency;
+      return this.$store.state.ARegisterMod.isCurrency;
     },
   },
   mounted() {
