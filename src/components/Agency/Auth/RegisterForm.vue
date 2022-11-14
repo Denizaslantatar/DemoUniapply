@@ -89,7 +89,7 @@ export default {
         this.$store
           .dispatch("ARegisterMod/Register", this.payload)
           .then(() => {
-            this.isProcess = false; // Bu akışı sor
+            this.isProcess = false;
           })
           // kayıt işlemi bitti formu sıfırla
           .then(() => {
@@ -345,7 +345,6 @@ export default {
               >Email
               <span class="text-danger">*</span>
             </label>
-            <!-- <small class="text-valid">Lorem ipsum dolor sit amet consectetur.</small> -->
           </div>
           <div class="form-floating mb-3">
             <input

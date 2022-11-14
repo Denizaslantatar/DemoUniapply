@@ -6,7 +6,7 @@ import ARegisterService from "@/services/Agency/Register.service.js";
 import { useToast } from "vue-toastification";
 const toast = useToast();
 
-export const AregisterMod = {
+export const ARegisterMod = {
   namespaced: true,
   state: {
     isCountry: [],
