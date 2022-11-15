@@ -12,6 +12,7 @@ import { useToast } from "vue-toastification";
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import Spinner from "@/components/Layouts/Loading/Spinner.vue";
+import { VueFinalModal } from "vue-final-modal";
 
 // // Import all of Bootstrap's CSS
 // import "~bootstrap/scss/bootstrap";
@@ -33,6 +34,7 @@ deniz.use(Toast, {
   maxToasts: 3,
   newestOnTop: true,
 });
+deniz.component("VueFinalModal", VueFinalModal);
 deniz.component("v-select", vSelect);
 deniz.component("Spinner", Spinner);
 

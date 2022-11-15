@@ -10,6 +10,12 @@ const ForgotPassword = () => {
 const RegisterContent = () => {
   return import("@/components/Agency/Auth/RegisterForm.vue");
 };
+const Settings = () => {
+  return import("@/components/Agency/Settings/Settings.vue");
+};
+const BankingContainer = () => {
+  return import("@/components/Agency/Settings/Pages/BankingContainer.vue");
+};
 
 export default [
   {
@@ -23,6 +29,32 @@ export default [
   {
     path: "/recruiter/signup",
     component: RegisterContent,
+  },
+  {
+    path: "/partner/settings",
+    component: Settings,
+    redirect: "/partner/settings/agency",
+    meta: {
+      agency: true,
+    },
+    children: [
+      {
+        path: "agency",
+        component: AgencyInfo,
+      },
+      {
+        path: "banking",
+        component: BankingContainer,
+      },
+      {
+        path: "staff",
+        component: StaffContainer,
+      },
+      {
+        path: "commission",
+        component: CommissionHome,
+      },
+    ],
   },
   {
     path: "/partner/dashboard",
