@@ -1,10 +1,10 @@
 <script>
 // This is Setting Home Page
-import SettingSidebar from "./components/Agency/Settings/SettingSidebar.vue";
+import SettingSidebar from "./SettingSidebar.vue";
 export default {
   components: { SettingSidebar },
   mounted() {
-    this.$store.dispatch("ASettingMod/GetPartnerBankInfoList");
+    this.$store.dispatch("ASettingMod/GetBankList");
   },
 };
 </script>

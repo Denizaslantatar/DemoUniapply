@@ -38,22 +38,22 @@ export default [
       agency: true,
     },
     children: [
-      {
+      /* {
         path: "agency",
         component: AgencyInfo,
-      },
+      }, */
       {
         path: "banking",
         component: BankingContainer,
       },
-      {
+      /*   {
         path: "staff",
         component: StaffContainer,
       },
       {
         path: "commission",
         component: CommissionHome,
-      },
+      }, */
     ],
   },
   {

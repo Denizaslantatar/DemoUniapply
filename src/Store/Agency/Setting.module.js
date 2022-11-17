@@ -1,22 +1,22 @@
 import ASettingServ from "@/services/Agency/Setting.service";
 
-import { useToast } from "vue-toastification";
-const toast = useToast();
-
 export const ASettingMod = {
-  namspaced: true,
+  namespaced: true,
   state: {
-    bank: [],
+    bankList: [],
   },
   mutations: {
-    setBank(state, response) {
-      state.bank = response.detail;
+    setBankList(state, list) {
+      state.bankList = list;
     },
   },
   actions: {
-    async GetPartnerBankInfoList({ commit }) {
+    async GetBankList({ commit }) {
       await ASettingServ.GetPartnerBankInfoList().then((response) => {
-        commit("setBank", response.data);
+        if (response.data.detail) {
+          let bankList = response.data.detail;
+          commit("setBankList", bankList);
+        }
       });
     },
   },

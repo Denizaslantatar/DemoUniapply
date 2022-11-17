@@ -27,7 +27,7 @@ export default {
           required,
           email,
         },
-        password: {
+        Password: {
           required,
         },
       },
@@ -37,8 +37,10 @@ export default {
   methods: {
     Login() {
       this.v$.$validate();
+
       if (!this.v$.$error) {
         this.isProcess = true;
+
         this.$store.dispatch("ALoginMod/Login", this.payload).then(() => {
           this.isProcess = false;
         });
