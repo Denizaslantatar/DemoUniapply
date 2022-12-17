@@ -17,5 +17,20 @@ class ALoginService {
         };
       });
   }
+  async GetPartnerInfo() {
+    let URL = AGENT + "GetPartnerCurrentUserInfo";
+    return axios.get(URL, {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    });
+  }
+  PostResetPasswordAgency(payload) {
+    return axios.post(STU + "PostResetPasswordAgency", payload, {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    });
+  }
 }
 export default new ALoginService();

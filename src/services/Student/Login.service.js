@@ -17,5 +17,20 @@ class SLoginService {
         };
       });
   }
+  async GetStudentInfo() {
+    let URL = STU + "GetAgencyInfo?Agent=uniapplynow";
+    return axios.get(URL, {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    });
+  }
+  PostResetPassword(payload) {
+    return axios.post(STU + "PostResetPassword", payload, {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    });
+  }
 }
 export default new SLoginService();

@@ -43,9 +43,6 @@ export default {
     <li>
       <router-link to="/student/signin">Student Sign in</router-link>
     </li>
-    <li>
-      <router-link to="/student/signup">Student Sign up</router-link>
-    </li>
   </ul>
 
   <RouterView v-if="isTokenLoaded" />

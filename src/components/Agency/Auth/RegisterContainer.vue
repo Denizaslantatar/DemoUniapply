@@ -22,6 +22,9 @@ export default {
       }
     }
   },
+  beforeCreate() {
+    document.title = "Recruiter Register | " + this.SiteTitle;
+  },
 };
 </script>
 <template>
@@ -37,7 +40,7 @@ export default {
               "
             >
               <div class="row">
-                <div class="col-md-7">
+                <div class="col-lg-7 col-md-12">
                   <div class="login-head mb-5">
                     <h1 class="fw-700 h2 mb-3">
                       Register to discover your ideal program and university

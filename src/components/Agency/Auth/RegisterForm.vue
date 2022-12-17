@@ -422,9 +422,13 @@ export default {
             />
             <label class="form-check-label fs-7 lh-sm" for="policyCheck">
               I have read and agree to the
-              <a class="text-purple">Terms and Conditions</a>
+              <a class="text-purple" target="_blank" href="/term-conditions"
+                >Terms and Conditions</a
+              >
               and the
-              <a class="text-purple">Privacy and Cookies Policy</a>
+              <a class="text-purple" target="_blank" href="/privacy-policy"
+                >Privacy and Cookies Policy</a
+              >
               .
               <span class="text-danger">*</span>
             </label>
