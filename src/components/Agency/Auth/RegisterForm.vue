@@ -163,7 +163,7 @@ export default {
       <Spinner v-if="!isDataLoaded" />
       <!-- Form yüklenene kadar spinner çalıştı - form yüklendi -->
       <div class="row" v-if="isDataLoaded">
-        <div class="col-md-9">
+        <div class="col-md-6">
           <div class="form-floating mb-3">
             <input
               type="text"
