@@ -11,8 +11,8 @@ export default {
   data() {
     return {
       payload: {
-        UserName: "14@mart.com",
-        Password: "Test1923*",
+        UserName: "",
+        Password: "",
       },
       isProcess: false,
       isPwText: "password",

@@ -35,13 +35,13 @@ export default {
 <template>
   <ul>
     <li>
-      <router-link to="/recruiter/signin">Agency Sign in</router-link>
+      <router-link to="/recruiter/signin">Agency Login</router-link>
     </li>
     <li>
-      <router-link to="/recruiter/signup">Agency Sign up</router-link>
+      <router-link to="/recruiter/signup">Agency Register</router-link>
     </li>
     <li>
-      <router-link to="/student/signin">Student Sign in</router-link>
+      <router-link to="/student/signin">Student Login</router-link>
     </li>
   </ul>
 
