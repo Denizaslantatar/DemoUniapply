@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       payload: {
-        Email: "tacettinsertkaya2@gmail.com",
+        Email: "yasin@ams4you.com",
         Password: "Test1923*",
         APMasterId: 12496,
       },
@@ -56,17 +56,12 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div
-              class="login"
-              style="
-                background-image: url(/assets/images/mascots/agency-login.svg);
-              "
-            >
+            <div class="login">
               <div class="row">
                 <div class="col-md-7">
                   <div class="login-head mb-5">
                     <h1 class="fw-700">
-                      Welcome back <span class="text-purple">Recruiter!</span>
+                      Welcome back <span class="text-success">Recruiter!</span>
                       <br />
                       Please login to your account
                     </h1>
@@ -138,7 +133,7 @@ export default {
                         </router-link>
                         <button
                           type="button"
-                          class="btn btn-primary text-white fw-500 w-100"
+                          class="btn btn-success text-white fw-500 w-100"
                           @click="Login()"
                         >
                           Login

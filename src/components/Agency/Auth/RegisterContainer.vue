@@ -33,12 +33,7 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div
-              class="login"
-              style="
-                background-image: url(/assets/images/mascots/agency-register.svg);
-              "
-            >
+            <div class="login">
               <div class="row">
                 <div class="col-lg-7 col-md-12">
                   <div class="login-head mb-5">
@@ -55,8 +50,8 @@ export default {
                   <RegisterForm />
                   <div class="login-footer fw-500">
                     Don't have an account?
-                    <router-link to="/recruiter-signin" class="text-purple"
-                      >Sign In</router-link
+                    <router-link to="/recruiter-signin" class="text-success"
+                      >Register</router-link
                     >
                   </div>
                 </div>
